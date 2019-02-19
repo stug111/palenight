@@ -1,0 +1,17 @@
+{
+  "name": "palenight",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Vadim Mishkhozhev <vadim.stug@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode development",
+    "dist": "webpack --mode production",
+    "watch": "webpack --watch --mode development"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  }
+}
