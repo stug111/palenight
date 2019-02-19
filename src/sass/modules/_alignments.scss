@@ -1,13 +1,25 @@
 .alignleft {
-	display: inline;
+	/*rtl:ignore*/
 	float: left;
-	margin-right: 1.5em;
+	/*rtl:ignore*/
+	margin-right: $size__spacing-unit;
+
+	@include media(tablet) {
+		/*rtl:ignore*/
+		margin-right: calc(2 * #{$size__spacing-unit});
+	}
 }
 
 .alignright {
-	display: inline;
+	/*rtl:ignore*/
 	float: right;
-	margin-left: 1.5em;
+	/*rtl:ignore*/
+	margin-left: $size__spacing-unit;
+
+	@include media(tablet) {
+		/*rtl:ignore*/
+		margin-left: calc(2 * #{$size__spacing-unit});
+	}
 }
 
 .aligncenter {

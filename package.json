@@ -9,14 +9,17 @@
     "build": "webpack --mode production",
     "watch": "webpack --watch --mode development"
   },
-  "dependencies": {
-    "babel-polyfill": "^6.26.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
     "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
     "uglifyjs-webpack-plugin": "^2.1.1",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3"

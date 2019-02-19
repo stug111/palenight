@@ -1,16 +1,32 @@
 .wp-caption {
-	margin-bottom: 1.5em;
-	max-width: 100%;
+	margin-bottom: calc(1.5 * #{$size__spacing-unit});
 
-	img[class*="wp-image-"] {
-		@include center-block;
-	}
+	&.aligncenter {
 
-	.wp-caption-text {
-		margin: 0.8075em 0;
+		@include media(tablet) {
+			position: relative;
+			left: calc( #{$size__site-tablet-content} / 2 );
+			transform: translateX( -50% );
+		}
+
+		@include media(desktop) {
+			left: calc( #{$size__site-desktop-content} / 2 );
+		}
 	}
 }
 
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .wp-caption-text {
+	color: $color__text-light;
+	font-size: $font__size-xs;
+	font-family: $font__heading;
+ 	line-height: $font__line-height-pre;
+ 	margin: 0;
+ 	padding: ( $size__spacing-unit * .5 );
 	text-align: center;
 }

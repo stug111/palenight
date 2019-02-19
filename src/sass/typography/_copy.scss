@@ -1,45 +1,62 @@
 p {
-	margin-bottom: 1.5em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
 	font-style: italic;
 }
 
 blockquote {
-	margin: 0 1.5em;
-}
 
-address {
-	margin: 0 0 1.5em;
+	cite {
+		font-size: $font__size-xs;
+		font-style: normal;
+		font-family: $font__heading;
+	}
 }
 
 pre {
-	background: $color__background-pre;
+	font-size: $font__size-sm;
 	font-family: $font__pre;
-	@include font-size(0.9375);
-	line-height: $font__line-height-pre;
-	margin-bottom: 1.6em;
-	max-width: 100%;
+	line-height: $font__line-height-body;
 	overflow: auto;
-	padding: 1.6em;
 }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
+	font-size: $font__size-sm;
 	font-family: $font__code;
-	@include font-size(0.9375);
 }
 
 abbr, acronym {
-	border-bottom: 1px dotted $color__border-abbr;
+	border-bottom: 1px dotted #666;
 	cursor: help;
 }
 
-mark, ins {
-	background: $color__background-ins;
+mark,
+ins {
+	background: #fff9c0;
 	text-decoration: none;
 }
 
 big {
 	font-size: 125%;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&:focus {
+		text-decoration: underline;
+	}
 }
