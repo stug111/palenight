@@ -96,16 +96,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "site/site";
 
 /*--------------------------------------------------------------
-# Modules
+# Infinite scroll
 --------------------------------------------------------------*/
-@import "modules/modules";
+@import "modules/infinite-scroll";
 
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
 
-/*--------------------------------------------------------------
-# Blocks
---------------------------------------------------------------*/
-@import "blocks/blocks";
+body {
+	background: red;
+}
