@@ -78,7 +78,7 @@ module.exports = {
 		}),
 		new CleanWebpackPlugin(["./build/*"]),
 		new BrowserSyncPlugin({
-			proxy: config.url,
+			proxy: "http://name.local/",
 			files: ["**/*.php"],
 			reloadDelay: 0
 		})
@@ -91,5 +91,5 @@ module.exports = {
 			}),
 			new OptimizeCSSAssetsPlugin({})
 		]
-	},
+	}
 };
